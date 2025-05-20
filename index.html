@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Una Aventura Para Ti</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--First Screen-->
+    <section class="screen screen1 active" id="screen1">
+        <h1>Hola, Señorita Diana </h1>
+        <p>Te preparé algo especial... ¿Me acompañas?</p>
+        <button onclick="nextScreen()">¡Vamos allá!</button>
+        <div class="gif">
+            <img src="/assets/Elegant_frog.gif" alt="hi" width="250px">
+        </div>
+    </section>
+
+    <!--Screen 2: Trivia-->
+    <section class="screen screen2" id="screen2">
+        <h2>¿Recuerdas cuándo fue la primera que salimos?... Yo no jsjs</h2>
+        <h2>Entonces ¿Dónde fue la primera vez que platicamos personalmente?</h2>
+        <button onclick="nextScreen()">En el ITEL (subiendo el camión)</button>
+        <button onclick="nextScreen()">En el camión</button>
+        <button onclick="nextScreen()">En los asientos del camión</button>
+        <img src="/assets/marshmello.gif" alt="hi" width="200px">
+    </section>
+
+    <!--Screen 3-->
+    <section class="screen screen3" id="screen3">
+        <h2>¿Qué emoji describe mejor lo que sientes cuando estamos juntos?</h2>
+        <button onclick="nextScreen()">😳</button>
+        <button onclick="nextScreen()">😂</button>
+        <button onclick="nextScreen()">😍</button>
+        <button onclick="nextScreen()">😎</button>
+        <div class="gif">
+            <img src="/assets/asking.png" alt="which" width="300px">
+        </div>
+    </section>
+
+    <!--Screen 4-->
+    <section class="screen screen4" id="screen4">
+        <h2>Del 1 al 10, ¿Que tanto crees que combinamos?</h2>
+        <button onclick="nextScreen()">1 - 3</button>
+        <button onclick="nextScreen()">4 - 7</button>
+        <button onclick="nextScreen()">8 - 10</button>
+        <div class="gif">
+            <img src="/assets/asking.png" alt="which" width="300px">
+        </div>
+    </section>
+
+    <!--Screen 5-->
+    <section class="screen screen5" id="screen5">
+        <h2>Soy la persona que sonrie cada vez que te ve... ¿Quien soy?</h2>
+        <button onclick="nextScreen()">Tu Fan #1</button>
+        <button onclick="nextScreen()">El que hizo esto</button>
+        <button onclick="nextScreen()">Tu futuro novio</button>
+        <div class="gif">
+            <img src="/assets/inLove.png" alt="Me" width="250px">
+        </div>
+    </section>
+
+    <!--Screen 6-->
+    <section class="screen screen6" id="screen6">
+        <h3>Gracias por acompañarme en esta pequeña aventura.
+            No sé si ya lo sospechabas, pero me encantaría que fueras mi novia. 
+            ¿Te gustaría dar ese paso conmigo?
+        </h3>
+        <h1>¿Quieres ser mi novia?</h1>
+        <button onclick="nextScreen(); mostrarMensaje()">¡Sí quiero!</button>
+        <button onclick="nextScreen(); mostrarMensaje()">Obvio que sí</button>
+        <button disabled class="disabled">No</button>
+        <div class="gif">
+            <img src="/assets/monkey.gif" alt="Choosing" width="200px">
+        </div>
+    </section>
+
+    <!--Final Screen-->
+    <section class="screen screen7" id="screen7">
+        <h3 id="mensajeFinal" class="typewriter"></h3>
+        <div class="gif">
+            <img src="/assets/inLove.png" alt="LoveYa" width="200px">
+        </div>
+    </section>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-text" id="progress-text">❤️ Progreso: 0%</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

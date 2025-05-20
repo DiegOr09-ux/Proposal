@@ -1,0 +1,138 @@
+.screen {
+    display: none;
+    padding: 20px;
+    min-height: 80vh;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.screen.active {
+    display: block;
+}
+
+.screen1 {
+    
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    text-align: center;
+}
+
+.screen2 {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    text-align: center;
+}
+
+.screen3 {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    text-align: center;
+}
+
+.screen4 {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    text-align: center;
+}
+
+.screen5 {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    text-align: center;
+}
+
+.screen6 {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    text-align: center;
+}
+
+.screen7 {
+    background: linear-gradient(135deg, #84fab0, #8fd3f4);
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.screen.active {
+    animation: fadeIn 0.8s ease-out;
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+.disabled {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #eab0cf;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.disabled:hover {
+    
+    background-color: #eab0cf;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: #ff85c1;
+}
+
+.progress-container {
+    position: relative;
+    width: 90%;
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff69b4, #ffb6c1);
+    border-radius: 20px 0 0 20px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #553272;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #ff1493;
+    white-space: pre-wrap;
+    overflow: hidden;
+    border-right: 2px solid #ff1493;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.gif {
+    margin-top: 100px;
+}
